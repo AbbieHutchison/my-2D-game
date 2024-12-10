@@ -7,6 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
     NavMeshAgent agent;
     GameObject player;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -16,11 +17,15 @@ public class NewBehaviourScript : MonoBehaviour
         agent.updateUpAxis = false;
 
         player = GameObject.FindWithTag("Player");
+
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         agent.SetDestination(player.transform.position);
+        animator.SetFloat("VelocityX", agent.velocity.x);
+         animator.SetFloat("VelocityY", agent.velocity.y);
     }
 }
