@@ -23,13 +23,13 @@ public class PlayerShooting: MonoBehaviour
  void RotateBulletSpawnPointTowardsMouse()
  {
     // get the mouse position in screen space and convert it to to word space
-    Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition).normalized;
+    Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     mousePosition.z = 0f; // ensure  z-axis is 0 for 2d space 
     //calculate  the direction  from the player to the mouse
     Vector2 direction = (mousePosition - firePointRotation.position).normalized;
 
     // calculate the angle to rotate the fire point (using Atan2 to get angle in degrees)
-    float  angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
     // apply the roattion to the fire point 
     firePointRotation.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
