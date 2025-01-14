@@ -11,10 +11,13 @@ public class Health : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;   // we set the current health to whatever the max allowed health is 
+        Debug.Log("Player health = " + currentHealth);
     }
+
 
    
     public void TakeDamage(int damage)  // we will use this function to change our health. it needs to be public so that other scripts can see it.
+
     {
         currentHealth -= damage;
 

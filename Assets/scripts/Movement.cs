@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        Debug.Log("Name of the object: "+ gameObject.name);
     }
 
     void Update()

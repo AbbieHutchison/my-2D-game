@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class BasicEnemy : MonoBehaviour
 {
     NavMeshAgent agent;
     GameObject player;
@@ -26,6 +26,6 @@ public class NewBehaviourScript : MonoBehaviour
     {
         agent.SetDestination(player.transform.position);
         animator.SetFloat("VelocityX", agent.velocity.x);
-         animator.SetFloat("VelocityY", agent.velocity.y);
+        animator.SetFloat("VelocityY", agent.velocity.y);
     }
 }

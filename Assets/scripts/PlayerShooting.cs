@@ -46,7 +46,7 @@ void Shoot()
     // apply velocity to the bullet in the direction the fire point is facing
     rb.velocity = firePointRotation.right * bulletSpeed;
 
-    Destroy(bullet, 10f);
+    Destroy(bullet, 5f);
 }
 }
 
