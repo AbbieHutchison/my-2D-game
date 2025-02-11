@@ -6,7 +6,7 @@ public class EnemyCollisionDamage : MonoBehaviour
 {
    public float damage;  // enemy damage
 
-   private void OnColissionEnter2D(Collision2D collision)
+   private void OnCollisionEnter2D(Collision2D collision)
    {
     // if we collided with the player, grab the health script and deal damage
     if (collision.gameObject.CompareTag("Player"))
