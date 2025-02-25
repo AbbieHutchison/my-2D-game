@@ -8,9 +8,24 @@ public class PlayerShooting: MonoBehaviour
     public Transform firePointRotation;   // the position where bullets are spawned
     public Transform bulletSpawnPoint;
     public float bulletSpeed = 20f; // speed of the bullet
+   
+
+    AudioSource audioSource; // the souce attatched to this gameobject
+    public AudioClip attackSound; // the sound effect that will play whenever a magic missile is shot
+
+ [Header("Timer variables")]
+ float LastTimeShot;
+
+ private void Start()
+ {
+    audioSource = GetComponent<AudioSource>();
+ }
 
  void Update()
  {
+    if (UIManager .isPaused) // if the game is supposed to be paused ignore the rest of the code
+    return;
+
     RotateBulletSpawnPointTowardsMouse();
 
     // check for the 'fire1' input (left mouse button or spacebar by default)
@@ -37,6 +52,8 @@ public class PlayerShooting: MonoBehaviour
 }
 void Shoot()
 {
+    lastTimeShot = Time.time;
+
     // Instantiate the bullet at the fire point's position and rotation
     GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, firePointRotation.rotation);
 
@@ -45,6 +62,9 @@ void Shoot()
 
     // apply velocity to the bullet in the direction the fire point is facing
     rb.velocity = firePointRotation.right * bulletSpeed;
+
+    //play attatch sound whenever we shoot
+    audioSource.PlayOneShot(attackSound);
 
     Destroy(bullet, 5f);
 }
