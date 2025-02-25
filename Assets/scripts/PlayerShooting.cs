@@ -14,7 +14,7 @@ public class PlayerShooting: MonoBehaviour
     public AudioClip attackSound; // the sound effect that will play whenever a magic missile is shot
 
  [Header("Timer variables")]
- float LastTimeShot;
+ float lastTimeShot;
 
  private void Start()
  {
