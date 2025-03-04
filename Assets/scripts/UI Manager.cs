@@ -20,7 +20,7 @@ public class UIManager : MonoBehaviour
    {
     pauseMenuUI.SetActive(false);
     Time.timeScale = 1f;
-    isPaused = true;
+    isPaused = false;
    }
 
    void PauseGame()
