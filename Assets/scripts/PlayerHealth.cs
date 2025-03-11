@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     float currentHealth;
 
     public HUDManager HUD;
+    public GameOverManager GameOverManager;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void Die()
     {
-        //this will get replaced with a death animation at somepoint
-        Destroy(gameObject);
+        GameOverManager.GameOver();
     }
 }
