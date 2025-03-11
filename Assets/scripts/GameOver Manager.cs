@@ -10,6 +10,7 @@ public class GameOverManager : MonoBehaviour
     public void GameOver()
     {
         gameOverUI.SetActive(true);
+        gameOverUI.GetComponent<Animator>().SetTrigger("gameover trigger");
         Time.timeScale = 0f; // pause the game
     
     }
