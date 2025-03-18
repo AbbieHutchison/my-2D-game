@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b9e1ac6d631218646a907c0f63d5bf70
+guid: ecae16de4e59b4ce89677e67a43ac891
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 275
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: monjey left_0
+      name: New Piskel (1)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 64
-        height: 64
+        y: 288
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49c659072ce7576468dbe59c96794935
-      internalID: -985501439
+      spriteID: f62d4f3f0fbbf4c128d8de7150f960f5
+      internalID: 1994116788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monjey left_1
+      name: New Piskel (1)_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
+        x: 288
+        y: 288
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ce66846eeb40bd438e80d166cf11a90
-      internalID: 1096895628
+      spriteID: 2fcc2ce4abe1246d88860235c0a74f29
+      internalID: -1539885996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monjey left_2
+      name: New Piskel (1)_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6df73c3922f3de343809647a5910854e
-      internalID: 1012178966
+      spriteID: f2978f5a01a824e33ba05f0be5dc8b37
+      internalID: 2094058826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monjey left_3
+      name: New Piskel (1)_3
       rect:
         serializedVersion: 2
-        x: 64
+        x: 288
         y: 0
-        width: 64
-        height: 64
+        width: 288
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ba21ac3a555428418afd0b9a507a66a
-      internalID: -559703733
+      spriteID: 0b3942cc2e2ed4f839d61232ec5f18a7
+      internalID: 1890430315
       vertices: []
       indices: 
       edges: []
@@ -191,10 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      monjey left_0: -985501439
-      monjey left_1: 1096895628
-      monjey left_2: 1012178966
-      monjey left_3: -559703733
+      New Piskel (1)_0: 1994116788
+      New Piskel (1)_1: -1539885996
+      New Piskel (1)_2: 2094058826
+      New Piskel (1)_3: 1890430315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
