@@ -6,7 +6,14 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     public GameObject gameOverUI; // reference to your game over UI panel
-    
+    public GameObject YouWinUI;
+
+    public void YouWin()
+    {
+        YouWinUI.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
     public void GameOver()
     {
         gameOverUI.SetActive(true);

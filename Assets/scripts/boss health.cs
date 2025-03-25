@@ -6,20 +6,19 @@ public class bosshealth : MonoBehaviour
 {
     public int maxHealth;  // we will use this to set the max health value in the inspector
     int currentHealth;     // hidden number to keep track of current health
-   public GameObject Youwin;
+    GameOverManager gom;
 
 
     private void Start()
     {
         currentHealth = maxHealth;   // we set the current health to whatever the max allowed health is 
         Debug.Log("Player health = " + currentHealth);
-        Youwin = GameObject.Find("YouWinUI");
+        gom = FindObjectOfType<GameOverManager>();
     }
 
 
    
     public void TakeDamage(int damage)  // we will use this function to change our health. it needs to be public so that other scripts can see it.
-
     {
         currentHealth -= damage;
 
@@ -29,9 +28,9 @@ public class bosshealth : MonoBehaviour
         }
     }
 
-    void Die()     // this function will mandate what happens when the enemy/player dies
+    void Die()     // this function will mandate what happens when the enemy dies
     {
         Destroy(gameObject);
-      Youwin.SetActive(true);
+        gom.YouWin();
     }
 }

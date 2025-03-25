@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdf1b3f783c24a28a4d82efe4590aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 30
 --- !u!195 &8427075541723818159
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -206,4 +206,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 300
-  Youwin: {fileID: 0}
