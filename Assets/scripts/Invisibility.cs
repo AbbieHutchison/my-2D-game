@@ -6,13 +6,12 @@ using UnityEngine.AI;
 public class Invisibility : MonoBehaviour
 {
    public Renderer rend;
-   public GameObject enemy1;
-   public GameObject enemy2;
-   public GameObject enemy3;
+   public static bool isInvisible = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        isInvisible = false;
     }
 
     // Update is called once per frame
@@ -33,17 +32,13 @@ public class Invisibility : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         rend.enabled = false;
-        enemy1.GetComponent<NavMeshAgent>().enabled = false;
-        enemy2.GetComponent<NavMeshAgent>().enabled = false;
-        enemy3.GetComponent<NavMeshAgent>().enabled = false;
+        isInvisible = true;
     }
 
     void StopInvisible()
     {
         rend.GetComponent<Renderer>();
         rend.enabled = true;
-        enemy1.GetComponent<NavMeshAgent>().enabled = true;
-        enemy2.GetComponent<NavMeshAgent>().enabled = true;
-        enemy3.GetComponent<NavMeshAgent>().enabled = true;
+        isInvisible = false;
     }
 }

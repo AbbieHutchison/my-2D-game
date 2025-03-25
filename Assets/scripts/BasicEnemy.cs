@@ -24,7 +24,17 @@ public class BasicEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Invisibility.isInvisible == true)
+        {
+            agent.isStopped = true;
+        }
+        else 
+        {
+            agent.isStopped = false;
+        }
+
         agent.SetDestination(player.transform.position);
+
         animator.SetFloat("VelocityX", agent.velocity.x);
         animator.SetFloat("VelocityY", agent.velocity.y);
     }
